@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Foam</title>
+    <link href="style.css" rel="Stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Atkinson+Hyperlegible:wght@700&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<script defer src="./script.js"></script>
+<script src="https://kit.fontawesome.com/88b74e402b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container">
+    <nav class="nav-bar">
+       
+        <h1>Login-Foam</h1>
+        <div class="line">
+            
+        </div>
+        <div class="line2">
+            
+</div>
+
+    </nav>
+    
+    <div class="card">
+        <form class="foam" id="form" action="\">
+       <label for="username" class="lb">User-Name</label><br>
+       <input type="text" id="username" class="box" onkeyup="validateName()">
+       <span  id="name-error"></span>
+
+       <label for="email" class="lb1">E-mail</label><br>
+       <input type="text" id="email" class="box1" onkeyup="validateEmail()">
+       <div class="error"></div>
+       <div class="gmail">
+       <span id="email-error"></span>
+       </div>
+
+       <label for="password" class="lb1">Password</label><br>
+       <input type="password" class="box1" id="password" onkeyup="validatePass()">
+       <div class="error"></div>
+       <div class="passt">
+       <span id="password-error"></span>
+       </div>
+
+       <label for="password" class="lb1" >Re-enter password </label><br>
+       <input type="password" class="box1" id="repassword" onkeyup="check(this)">
+       
+       <span id="repassword-error"></span>
+       
+       
+
+       <button type="submit" class="btn" onclick="return validateSubmit()">Register</button>
+       <span id="submit-error"></span>
+        </form>
+        </div>
+
+
+        <div class="footer">
+       <p>coppyright@Anavadhsuresh</p>
+       <p>This login-form validation is compleatly designed and made by anavadhsuresh....</p>
+      
+       
+
+        </div>
+
+    </div>
+</body>
+</html>
